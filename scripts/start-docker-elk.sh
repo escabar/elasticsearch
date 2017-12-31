@@ -1,5 +1,7 @@
 #!/bin/bash
 
+## CURRENTLY DOESN'T RUN ** Using this to store commands for now
+
 set -eux
 
 `docker run -p 9200:9200 -e http.host=0.0.0.0 -e transport.host=127.0.0.1 --net elastic --name elastic docker.elastic.co/elasticsearch/elasticsearch:5.5.1`
